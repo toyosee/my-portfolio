@@ -1,0 +1,312 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* Ensures full-page height */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Make the root container fill remaining space */
+#root,
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* Full viewport height */
+}
+
+/* Ensures content grows dynamically */
+.main-content {
+  flex: 1;
+  /* Pushes footer to the bottom */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.Salute {
+  font-size: 45px;
+  font-weight: bold;
+  color: green;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.contact-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.info-section,
+.form-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  /* Curved edges */
+  padding: 30px;
+}
+
+/* Ensure both sections inherit the tallest height */
+.row {
+  display: flex;
+  align-items: stretch;
+  /* Ensures both sections stretch to the same height */
+}
+
+/* Style Info Section */
+.info-section {
+  background-color: rgb(28, 150, 107);
+  color: white;
+  flex: 1;
+  /* Makes it inherit form section's height */
+}
+
+/* Style Form Section */
+.form-section {
+  background-color: rgb(28, 150, 107);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  /* Makes it inherit info section's height */
+}
+
+.form-section .shadow {
+  background: white;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #343a40;
+  /* Keeps navbar visible */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  /* Optional: Adds shadow effect */
+}
+
+.new-text {
+  color: rgb(28, 150, 107);
+}
+
+.new {
+  background: rgb(28, 150, 107);
+  color: white;
+}
+
+.new:hover {
+  background: rgb(7, 85, 58);
+  color: white;
+}
+
+p {
+  font-size: 18px;
+  color: #555;
+}
+
+footer {
+  color: #555;
+  font-size: 16px;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-link {
+  font-size: 18px;
+  margin-right: 15px;
+}
+
+.profile-image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.social-links a {
+  color: rgb(28, 150, 107);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: rgb(7, 85, 58);
+}
+
+.nav-link:hover {
+  color: #f8f9fa !important;
+}
+
+.home-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.welcome-section {
+  padding: 30px;
+}
+
+.image-section img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.about-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.shadow-lg {
+  background: white;
+  border-radius: 12px;
+}
+
+.text-primary {
+  font-weight: bold;
+}
+
+.text-secondary {
+  color: #6c757d;
+}
+
+h1 {
+  color: rgb(28, 150, 107);
+  font-size: 36px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 18px;
+  color: #555;
+}
+
+.about-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.skills-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.shadow-lg {
+  background: white;
+  border-radius: 12px;
+}
+
+.text-primary {
+  font-weight: bold;
+}
+
+.text-secondary {
+  color: #6c757d;
+}
+
+
+h2 {
+  color: #333;
+  font-size: 28px;
+}
+
+.lead {
+  font-size: 20px;
+  color: #555;
+}
+
+.shadow {
+  background: white;
+  border-radius: 8px;
+}
+
+.projects-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.project-image {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.shadow-lg {
+  background: white;
+  border-radius: 12px;
+}
+
+.text-primary {
+  font-weight: bold;
+}
+
+.text-secondary {
+  color: #6c757d;
+}
+
+.brand-logo {
+  width: 50px;
+  /* Adjust size */
+  height: 50px;
+  object-fit: contain;
+  border-radius: 50px;
+}
+
+/* .profile-tab:hover{
+  background-color: rgb(28, 150, 107);
+} */
+
+.error-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-title {
+  font-size: 48px;
+  font-weight: bold;
+  color: #dc3545;
+}
+
+.error-message {
+  font-size: 20px;
+  color: #555;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
