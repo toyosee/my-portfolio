@@ -1,4 +1,4 @@
-import { Container, Row, Col, Button, Tab, Tabs, Carousel } from "react-bootstrap";
+import { Container, Row, Col, Button, Tab, Tabs, Carousel, Badge } from "react-bootstrap";
 import { FaLinkedin, FaGithub, FaFacebook, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 import { useState } from "react";
 import portfolio from "../assets/portfolio.jpg";
@@ -27,6 +27,12 @@ function Home() {
             web development with language proficiency in Python, C#, Dart, JavaScript, Typescript,
             PHP, SQL, and R. Competent in cybersecurity, SQL, and tech frameworks; adept in Trello and Jira.
           </p>
+          <Badge className="new mb-2 p-2" bg="new" text="light">
+            <span>Software Engineer | Data Scientist | AI Enthusiast</span>
+          </Badge> <br />
+          <span className="new-text">
+            +2348069213941
+          </span>
 
           {/* Buttons */}
           <div className="mt-3">
