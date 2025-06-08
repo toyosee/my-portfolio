@@ -1,6 +1,7 @@
 import { Container, Row, Col, Button, Tab, Tabs, Carousel, Badge } from "react-bootstrap";
 import { FaLinkedin, FaGithub, FaFacebook, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import portfolio from "../assets/portfolio.jpg";
 import resume from "../assets/resume.pdf";
 
@@ -36,7 +37,7 @@ function Home() {
 
           {/* Buttons */}
           <div className="mt-3">
-            <Button variant="" className="new me-2 mb-2" size="lg" href="/projects">
+            <Button variant="" className="new me-2 mb-2" size="lg" as={Link} to='/projects'>
               View My Work
             </Button>
             <Button variant="" className="new me-2 mb-2" size="lg" href={resume} download>
