@@ -2,7 +2,7 @@ import { Container, Row, Col, Button, Tab, Tabs, Carousel, Badge } from "react-b
 import { FaLinkedin, FaGithub, FaFacebook, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import portfolio from "../assets/portfolio.jpg";
+import portfolio from "../assets/portfolio.png";
 import resume from "../assets/resume.pdf";
 
 const funFacts = [
