@@ -67,7 +67,11 @@ function Home() {
 
         {/* Image Section */}
         <Col md={6} className="image-section">
-          <img src={portfolio} alt="Portfolio showcase" className="img-fluid rounded-circle profile-image shadow" />
+          <img 
+            src={portfolio} 
+            alt="Portfolio showcase" 
+            className="img-fluid rounded-circle profile-image shadow" 
+          />
         </Col>
       </Row>
 
